@@ -1,0 +1,15 @@
+<html>  
+    <header>
+        <script src="angular.min.js"></script>
+        <script type="text/javascript">
+        
+        angular.module('app',[]).controller('ctrl',['$scope',function($scope){
+            $scope.hello = 'hi';
+            
+        }]);
+        </script>
+        </header>    
+    <body ng-app="app" ng-controller="ctrl" >
+        {{hello}}
+    </body>
+</html>
