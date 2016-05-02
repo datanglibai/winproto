@@ -3,13 +3,16 @@
         <script src="angular.min.js"></script>
         <script type="text/javascript">
         
-        angular.module('app',[]).controller('ctrl',['$scope',function($scope){
+        angular.module('app',[]).controller('ctrl',['$scope','$http',function($scope,$http){
             $scope.hello = 'hi';
-            
+            $scope.data = {};
+            $http.get('/api').then(function(result){
+                $scope.data = result.data;
+            });
         }]);
         </script>
-        </header>    
+    </header>    
     <body ng-app="app" ng-controller="ctrl" >
-        {{hello}}
+        {{data.key}}
     </body>
 </html>
