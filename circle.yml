@@ -15,4 +15,4 @@ deployment:
     commands:      
       - echo $CLIENT_SECRET | base64 --decode > ${HOME}/client-secret.json      
       - gcloud auth activate-service-account --key-file ${HOME}/client-secret.json
-      - gcloud config set project "wiprototype-1299" && gcloud preview app deploy --bucket gs://staging.wiprototype-1299.appspot.com
+      - gcloud config set project "wiprototype-1299" && gcloud -q preview app deploy --bucket gs://staging.wiprototype-1299.appspot.com
