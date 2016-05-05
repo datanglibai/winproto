@@ -20,7 +20,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res) {
-  res.status(200).send('Hello, world! circleci.');
+  res.status(200).send('<html><head><title>Usage</title></head><body>Hello, world! circleci.</body></html>');
 });
 
 app.get('/api',function (req,res) {
