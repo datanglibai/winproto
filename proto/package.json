@@ -2,7 +2,7 @@
   "name": "appengine-hello-world",
   "description": "Simple Hello World Node.js sample for Google App Engine",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "license": "Apache Version 2.0",
   "author": "Google Inc.",
   "engines": {
@@ -14,6 +14,7 @@
     "deploy": "gcloud preview app deploy"
   },
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "memcached": "^2.2.1"
   }
 }
