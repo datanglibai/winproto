@@ -1,12 +1,16 @@
 {
-  "name": "appengine-hello-world",
+  "name": "winproto",
   "description": "Simple Hello World Node.js sample for Google App Engine",
   "version": "0.0.1",
-  "private": false,
+  "private": true,
   "license": "Apache Version 2.0",
   "author": "Google Inc.",
   "engines": {
     "node": "~4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pearldiver/winproto"
   },
   "scripts": {
     "start": "node app.js",
