@@ -12,6 +12,7 @@
 # limitations under the License.
 #
 # [START runtime]
+service: my-testqa
 runtime: nodejs
 vm: true
 # [END runtime]
