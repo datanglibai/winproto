@@ -1,1 +1,4 @@
 proto/node_modules
+proto/Dockerfile
+proto/source-context.json
+proto/source-contexts.json
